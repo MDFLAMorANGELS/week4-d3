@@ -1,0 +1,34 @@
+@mixin card-styling() {
+    &-cardGame {
+        margin: 20px;
+        border-radius: 20px;
+        background-color: #3b3a3a;
+        width: 22rem;
+        height: 25rem;
+        &-image {
+            width: 100%;
+            height: 170px;
+            border-radius: 20px 20px 0 0;
+        }
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            h3 {
+                font-family: 'Big Noodles';
+                font-size: 1.8em;
+                margin: 15px 0;
+            }
+            a {
+                text-decoration: none;
+                color: #ffffff;
+                background-color: red;
+                padding: 8px;
+                border-radius: 10px;
+                margin: 15px 0;
+                font-size: 1.2em;
+            }
+        }
+    }
+}

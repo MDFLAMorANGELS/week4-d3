@@ -1,0 +1,68 @@
+@import './mixins/cardStyling.scss';
+$color-red: rgb(255,20,20);
+
+@font-face {
+    font-family: 'Big Noodles';
+    src: url('../assets/fonts/big_noodle_titling.ttf');
+}
+@font-face {
+    font-family: 'REM', sans-serif;
+    src: url('../assets/fonts/REM-SemiBold.ttf');
+}
+
+body {
+    background-color: #191919;
+    color: #ffffff;
+    font-family: 'Big Noodles';
+    margin: auto 15vh;
+
+}
+
+header {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            font-size: 3.5em;
+            color: #D20A32;
+        }
+        input {
+            height: 30px;
+            width: 250px;
+            background-color: #191919;
+            border: 1px solid #ffffff;
+            border-radius: 25px;
+            color: #ffffff;
+            padding: 10px;
+            font-size: 16px;
+        }
+    }
+    div {
+        text-align: justify;
+        font-family: 'REM';
+        .welcome {
+            font-size: 2em;
+            margin: 0;
+        }
+    }
+}
+
+main {
+    margin-top: 50px;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include card-styling();
+        &-articles {
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media  screen and (max-width:1080px) {
+    body {
+        margin: auto 5vh;
+    }
+}
