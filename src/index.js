@@ -2,6 +2,10 @@ import routes from './routes';
 import './jsFile/Home';
 import './jsFile/PageDetail';
 import './jsFile/PageList';
+import './style/mixins/cardStyling.scss'
+import './style/index.scss';
+import { Search } from './jsFile/searchBar';
+
 const callRoute = () => {
     const { hash } = window.location;
     const pathParts = hash.substring(1).split('/');
@@ -18,13 +22,4 @@ const callRoute = () => {
   window.addEventListener('hashchange', () => callRoute());
   window.addEventListener('DOMContentLoaded', () => callRoute());
 
-import './style/mixins/cardStyling.scss'
-import './style/index.scss';
-
-import { myFunction } from './jsFile/file2';
-
-console.log("hello")
-console.log("API_KEY:", process.env.API_KEY);
-
-
-myFunction();
+Search();

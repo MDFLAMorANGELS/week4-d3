@@ -1,9 +1,8 @@
 const Home = () => {
     const preparePage = () => {
-    
         const displayResults = (articles) => {
           const resultsContent = articles.map((article) => (
-            `<article class="container-cardGame">
+            `<article class="container-cardGame box">
               <img class="container-cardGame-image" src="${article.background_image}" alt="image du jeu ${article.name}" />
               <div class="container-cardGame-content">
                 <h3>${article.name}</h3>

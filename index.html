@@ -9,8 +9,11 @@
 <body>
     <header>
         <nav>
-            <h1>The Hyper Programe</h1>
-            <input type="search" placeholder="Search a game">
+            <h1><a href="#">The Hyper Programe</a></h1>
+            <form id="searchForm">
+                <input type="text" id="searchBar" placeholder="Rechercher..." maxlength="25">
+                <button id="submit" type="submit"><img src="/src/assets/images/3331255.svg" alt="logo recherche"></button>
+            </form>
         </nav>
         <div>
             <p class="welcome">Welcome,</p>
@@ -22,13 +25,11 @@
                 with both new and existing partners, industry executives, gamers, and social influencers providing unprecedented exposure
             </p>
         </div>
-        
     </header>
-    <a href="#">Home</a>
-    <a href="#pagelist">PageList</a>
-    <a href="#pagelist/borderlands">PageList borderlands</a>
-
     <main id="pageContent">Choisissez un lien</main>
+    <footer>
+        <p><span>Pieters Valentin @ 2023</span> - Fictionnal website for exercice</p>
+    </footer>
 
     <script src="js/Home.js"></script>
     <script src="js/PageList.js"></script>
